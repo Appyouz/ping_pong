@@ -1,0 +1,12 @@
+* Things I learned:
+ So i was using float ballSpeedX and ballSppedY without using 'f' i.e ballSppedX = 0.5f
+  So this behavior led the int to get divide by a float value which resultant to zero.
+  So instead use f and multiply ballSpeedX and ballSppedY by a larger factor before adding it to
+  the position, like this-> ball.x += int(5.0f * ballSpeedX)
+
+  - SDL_Delay works as a frame limit. so instead of giving some random higher and smaller values
+    for ball speed, stating the frame limit is good.
+
+* TODO
+  - Fix the weird movement. 
+
